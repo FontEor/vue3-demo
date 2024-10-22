@@ -21,8 +21,9 @@ export default {
   methods: {
     getQRCode() {
       //生成的二维码为URL地址js
+      //http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg
       this.qrUrl =
-        "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"; //"https://www.baidu.com/";
+        "http://qp119.bmwae.cn/sqrcode/image?short=GUsQrq&domain=f.afbkw.cn&sign=&vhcode=gvbem1729591493uci769f827d2bb8ef130819e293c81148f134"; //"https://www.baidu.com/";
       let opts = {
         errorCorrectionLevel: "H", //容错级别
         type: "image/png", //生成的二维码类型
@@ -30,7 +31,7 @@ export default {
         margin: 0, //二维码留白边距
         width: 280, //宽
         height: 280, //高
-        text: "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg", //二维码内容https://www.baidu.com/
+        text: "http://qp119.bmwae.cn/sqrcode/image?short=GUsQrq&domain=f.afbkw.cn&sign=&vhcode=gvbem1729591493uci769f827d2bb8ef130819e293c81148f134", //二维码内容https://www.baidu.com/ 
         color: {
           dark: "#333333", //前景色
           light: "#fff", //背景色
